@@ -1,6 +1,6 @@
 import './App.css';
 import api from '../utils/Api';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 function App() {
   const [pictures, serPictures] = useState([]);
@@ -39,12 +39,13 @@ function App() {
       <div id='scrollPath'></div>
       <div className='app'>
         {pictures.map((card) => (
-          <img
-            src={card.download_url}
+          <div
             key={card.id}
-            alt=''
             className='app__img'
-          />
+            style={{ backgroundImage: 'url(' + card.download_url + ')' }}
+          >
+            <p className='app__author'>{card.author}</p>
+          </div>
         ))}
       </div>
     </>
