@@ -24,4 +24,6 @@
 
 [API с картинками](https://picsum.photos)
 
+### Работает только через VPN
+
 [Ссылка на GitHub Pages](https://ieasyjet.github.io/cascade-of-picture/)
